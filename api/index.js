@@ -53,7 +53,7 @@ bot.on('message',(msg) => {
         ).then((jres)=>{
             bot.sendMessage(
                 msg.chat.id,
-                'nilai p yang di prediksi adalah ${jres[0]} volt'
+                'nilai v yang di prediksi adalah ${jres[0]} volt'
                 );
             bot.sendMessage(
                 msg.chat.id,

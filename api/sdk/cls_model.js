@@ -1,11 +1,11 @@
 const tf = require('@tensorflow/tfjs-node');
 
 function normalized(data){ // i & r
-    i = (data[0] - 12.585) / 6.813882
-    r = (data[1] - 51.4795) / 29.151289
-    v = (data[2] - 650.4795) / 552.6351
-    p = (data[3] - 10620.56) / 12152.78
-    return [i, r, v, p]
+    xi1 = (data[0] - -1.74075276) 
+    xi2 = (data[1] - 1.35043183) 
+    xi3 = (data[2] - -0.89172336) 
+    xi4 = (data[3] - -1.49571784) 
+    return [xi1, xi2, xi3, xi4]
 }
 
 const argFact = (compareFn) => (array)  => array.map((el,idx) => [el, idx]).reduce(compareFn)[1]
